@@ -1,6 +1,4 @@
-function sum(a: number, b: number): number {
-  return a + b;
-}
-const sonuc = sum(3, 4);
-console.log("sonuc :>> ", sonuc);
-export { sum };
+import { sum } from "./helpers";
+const result = sum(3, 4);
+
+console.log("result :>> ", result);
