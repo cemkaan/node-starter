@@ -5,10 +5,14 @@
     "lib": ["ES2018"],
     "allowJs": true,
     "outDir": "build",
-    "rootDir": "src",
     "strict": true,
     "noImplicitAny": true,
     "esModuleInterop": true,
-    "resolveJsonModule": true
-  }
+    "resolveJsonModule": true,
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["jest", "node"],
+    "moduleResolution": "node"
+  },
+  "include": ["src/**/*", "tests/**/*.ts"],
+  "exclude": ["node_modules"]
 }
